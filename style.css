@@ -402,7 +402,7 @@ a{
 .icons{
     margin-top: 20px;
     display: flex;
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
 }
 
@@ -434,6 +434,15 @@ a{
 .icons .linkedin:hover{
     color: #860286;
 }
+
+.icons .whatsapp{
+    height: 60px;
+}
+
+.icons .whatsapp:hover{
+    color: #860286;
+}
+
 @media (max-width:900px) {
 .about p{
     font-size: 15px;
@@ -636,7 +645,7 @@ nav .links a{
 }
 
 .intro h3{
-    font-size: 10px;
+    font-size: 8px;
 }
 
 .btn{
@@ -909,5 +918,11 @@ nav .links{
 
 .icons .linkedin{
     height: 60px;
+} 
+
+.icons .whatsapp{
+    height: 50px;
 }
+
+
 }

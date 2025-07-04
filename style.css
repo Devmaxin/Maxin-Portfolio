@@ -1,0 +1,913 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: ease-in-out 0.2s all;
+}
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap');
+
+body{
+    background-color: #ECE4B7;
+    color: #231123;
+}
+
+@font-face {
+  font-family: 'Bodwars DEMO'; /* This is the name you'll use in your CSS */
+  src: url('Bodwars DEMO.otf'); /* This points to the location of your font file */
+}
+
+@font-face {
+  font-family: 'Noland-Bold'; /* This is the name you'll use in your CSS */
+  src: url('Noland-Bold.otf'); /* This points to the location of your font file */
+}
+
+@font-face {
+  font-family: 'Lequire'; /* This is the name you'll use in your CSS */
+  src: url('Lequire.otf'); /* This points to the location of your font file */
+}
+
+nav{
+    display: flex;
+    margin-top: 20px;   
+}
+
+nav .logo h3{
+    font-family: 'Bodwars DEMO';
+    margin-left: 10px;
+    color: #231123;
+}
+
+nav .logo h3:hover{
+    color: rgb(111, 2, 111);
+    
+}
+
+nav .links{
+    display: flex;
+    margin-left: auto;
+    font-family: 'Noland-Bold';
+    padding: 20px;
+    padding-top: 0px;
+    gap: 20px;
+}
+
+nav .links a{
+    color: #231123
+}
+
+nav .links a:hover{
+    color: #a003a0;
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pic img{
+    height: 200px;
+}
+
+.pic img:hover{
+    height: 205px;
+}
+
+.intro{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.intro h2{
+    font-family: 'Lequire';
+    font-size: 30px;
+}
+
+.intro p{
+    font-family: 'Bodwars DEMO';
+}
+
+.intro h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.btn button{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    font-family: 'Noland-Bold';
+    font-size: 15px;
+    border: #a003a0 3px solid;
+}
+
+.btn button:hover{
+    color: white;
+    background-color: #a003a0 ;
+    font-family: 'Noland-Bold';
+    font-size: 15.5px;
+    border: #a003a0 3px solid;
+    box-shadow: #231123 1px 1px 1px 1px;
+}
+
+.section2{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.section2 .about{
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    /* background-color: black; */
+}
+
+.section2 .Skills{
+    text-align: center;
+    width: 50%;
+    padding: 20px;
+    /* background-color: blue; */
+}
+
+.about h2{
+    font-family: 'Noland-Bold';
+}
+
+.about p{
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+.Skills img{
+    height: 100px;
+}
+
+.Skills .f_img{
+    height: 150px;
+}
+
+#js{
+    padding-left: 40px;
+}
+
+.projects {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projects h2{
+    font-family: 'Lequire';
+    text-align: center;
+}
+
+.myProjects{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.p1{
+    background-color: transparent;
+    border: #550555 2px solid;
+    color: #550555;
+    text-align: center;
+}
+
+.p1:hover{
+    box-shadow: #231123 -1px -1px 1px 1px;
+    color: #a103a1;
+}
+
+.p1 img{
+    height: 100px;
+}
+
+.p1 h2{
+    margin-top: 10px;
+    font-family: 'Lequire';
+    font-size: 15px;
+}
+
+.p1 h3{
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+.p2{
+    background-color: transparent;
+    border: #550555 2px solid;
+    color: #550555;
+    text-align: center;
+}
+
+.p2:hover{
+    box-shadow: #231123 -1px -1px 1px 1px;
+    color: #a103a1;
+}
+
+.p2 img{
+    height: 100px;
+}
+
+.p2 h2{
+    margin-top: 10px;
+    font-family: 'Lequire';
+    font-size: 15px;
+}
+
+.p2 h3{
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+.p3{
+    background-color: transparent;
+    border: #550555 2px solid;
+    color: #550555;
+    text-align: center;
+}
+
+.p3:hover{
+    box-shadow: #231123 -1px -1px 1px 1px;
+    color: #a103a1;
+}
+
+.p3 img{
+    height: 100px;
+}
+
+.p3 h2{
+    margin-top: 10px;
+    font-family: 'Lequire';
+    font-size: 13px;
+    
+}
+
+.p3 h3{
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+/* upcoming projects */
+
+.upcoming_projects {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.upcoming_projects h2{
+    font-family: 'Lequire';
+    text-align: center;
+}
+
+.up_projects{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project1{
+    background-color: transparent;
+    border: #550555 2px solid;
+    color: #550555;
+    text-align: center;
+}
+
+.project1:hover{
+    box-shadow: #231123 -1px -1px 1px 1px;
+    color: #a103a1;
+}
+
+.project1 img{
+    height: 120px;
+}
+
+.project1 h2{
+    margin-top: 10px;
+    font-family: 'Lequire';
+    font-size: 20px;
+}
+
+.project1 h3{
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+.project2{
+    background-color: transparent;
+    border: #550555 2px solid;
+    color: #550555;
+    text-align: center;
+}
+
+.project2:hover{
+    box-shadow: #231123 -1px -1px 1px 1px;
+    color: #a103a1;
+}
+
+.project2 img{
+    height: 120px;
+}
+
+.project2 h2{
+    margin-top: 10px;
+    font-family: 'Lequire';
+    font-size: 20px;
+}
+
+.project2 h3{
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+.project3{
+    background-color: transparent;
+    border: #550555 2px solid;
+    color: #550555;
+    text-align: center;
+}
+
+.project3:hover{
+    box-shadow: #231123 -1px -1px 1px 1px;
+    color: #a103a1;
+}
+
+.project3 img{
+    height: 130px;
+}
+
+.project3 h2{
+    margin-top: 10px;
+    font-family: 'Lequire';
+    font-size: 20px;
+}
+
+.project3 h3{
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+.connect{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect h2{
+    font-family: 'Bodwars DEMO';
+    color: #a003a0;
+}
+
+.connect p{
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.icons{
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.icons a{
+    text-decoration: none;
+    color: black;
+}
+
+.icons .github{
+    height: 60px;
+}
+
+.icons .github:hover{
+    color: #860286;
+}
+
+.icons .twitter{
+    height: 80px;
+}
+
+.icons .twitter:hover{
+    color: #860286;
+}
+
+.icons .linkedin{
+    height: 80px;
+}
+
+.icons .linkedin:hover{
+    color: #860286;
+}
+@media (max-width:900px) {
+.about p{
+    font-size: 15px;
+
+}
+
+.Skills img{
+    height: 80px;
+}
+
+.Skills .f_img{
+    height: 120px;
+}
+
+.p1 img{
+    height: 80px;
+}
+
+.p1 h2{
+    font-size: 12px;
+}
+
+.p1 h3{
+    font-size: 10px;
+}
+
+.p2 img{
+    height: 80px;
+}
+
+.p2 h2{
+    font-size: 12px;
+}
+
+.p2 h3{
+    font-size: 10px;
+}
+
+.p3 img{
+    height: 80px;
+}
+
+.p3 h2{
+    font-size: 10px;
+    
+}
+
+.p3 h3{
+    font-size: 10px;
+}
+
+.project1 img{
+    height: 100px;
+}
+
+.project1 h2{
+    font-size: 18px;
+}
+
+.project1 h3{
+    font-size: 10px;
+}
+
+.project2 img{
+    height: 100px;
+}
+
+.project2 h2{
+    font-size: 18px;
+}
+
+.project2 h3{
+    font-size: 10px;
+}
+
+.project3 img{
+    height: 100px;
+}
+
+.project3 h2{
+    font-size: 18px;
+}
+
+.project3 h3{
+    font-size: 10px;
+}
+}
+
+@media (max-width:800px) {
+
+nav .logo h3{
+    font-size: 15px;
+}
+
+nav .links a{
+    font-size: 13px;
+}
+.pic img{
+    height: 150px;
+}
+
+.pic img:hover{
+    height: 155px;
+}
+
+.intro h2{
+    font-size: 25px;
+}
+
+.intro p{
+    font-size: 15px;
+}
+
+.intro h3{
+    font-size: 16px;
+}
+
+.btn button{
+    font-size: 12px;
+}
+
+.btn button:hover{
+    font-size: 12.5px;
+}
+
+.about p{
+    font-size: 12px;
+
+}
+
+.Skills img{
+    height: 50px;
+}
+
+.Skills .f_img{
+    height: 90px;
+}
+
+.project1 img{
+    height: 80px;
+}
+
+.project1 h2{
+    font-size: 18px;
+}
+
+.project1 h3{
+    font-size: 8px;
+}
+
+.project2 img{
+    height: 80px;
+}
+
+}
+
+@media (max-width:720px) {
+
+.up_projects{
+    gap: 10px;
+}
+
+.project1 img{
+    height: 70px;
+}
+
+.project1 h3{
+    font-size: 7px;
+}
+
+.project2 img{
+    height: 70px;
+}
+
+.project2 h3{
+    font-size: 7px;
+}
+
+.project3 img{
+    height: 80px;
+}
+
+.project3 h2{
+    font-size: 15px;
+}
+
+.project3 h3{
+    font-size: 7px;
+}
+}
+
+@media (max-width:570px) {
+    
+.intro h2{
+    font-size: 20px;
+}
+
+.intro p{
+    font-size: 12px;
+}
+
+.intro h3{
+    font-size: 10px;
+}
+
+.btn{
+    gap: 20px;
+}
+
+.btn button{
+    font-size: 8px;
+}
+
+.btn button:hover{
+    font-size: 8.5px;
+}
+
+.section2{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.section2 .about{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    /* background-color: black; */
+}
+
+.about p{
+    font-size: 15px;
+    padding: 10px;
+}
+
+.section2 .Skills{
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    /* background-color: blue; */
+}
+
+.Skills img{
+    height: 80px;
+}
+
+.Skills .f_img{
+    height: 100px;
+}
+
+#js{
+    padding-left: 10px;
+}
+
+.myProjects{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.p1 img{
+    height: 120px;
+}
+
+.p1 h2{
+    font-size: 15px;
+}
+
+.p1 h3{
+    font-size: 13px;
+}
+
+.p2 img{
+    height: 120px;
+}
+
+.p2 h2{
+    font-size: 15px;
+}
+
+.p2 h3{
+    font-size: 13px;
+}
+
+.p3 img{
+    height: 130px;
+}
+
+.p3 h2{
+    font-size: 15px;
+    
+}
+
+.p3 h3{
+    font-size: 13px;
+}
+
+.up_projects{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.project1 img{
+    height: 120px;
+}
+
+.project1 h2{
+    font-size: 20px;
+}
+
+.project1 h3{
+    font-size: 13px;
+}
+
+.project2 img{
+    height: 120px;
+}
+
+.project2 h2{
+    font-size: 20px;
+}
+
+.project2 h3{
+    font-size: 13px;
+}
+
+.project3 img{
+    height: 160px;
+}
+
+.project3 h2{
+    font-size: 20px;
+}
+
+.project3 h3{
+    font-size: 13px;
+}
+
+}
+
+@media (max-width:450px) {
+nav .links{
+    display: none;
+}
+
+.btn button{
+    font-size: 10px;
+}
+
+.btn button:hover{
+    font-size: 10.5px;
+}
+
+.about p{
+    font-size: 12px;
+    padding: 10px;
+}
+
+.Skills img{
+    height: 60px;
+}
+
+.Skills .f_img{
+    height: 80px;
+}
+
+.p1 img{
+    height: 80px;
+}
+
+.p1 h2{
+    font-size: 12px;
+}
+
+.p1 h3{
+    font-size: 10px;
+}
+
+.p2 img{
+    height: 80px;
+}
+
+.p2 h2{
+    font-size: 12px;
+}
+
+.p2 h3{
+    font-size: 10px;
+}
+
+.p3 img{
+    height: 80px;
+}
+
+.p3 h2{
+    font-size: 10px;
+    
+}
+
+.p3 h3{
+    font-size: 10px;
+}
+
+.upcoming_projects h2{
+    font-size: 16px;
+}
+
+.project1 img{
+    height: 80px;
+}
+
+.project1 h2{
+    font-size: 15px;
+}
+
+.project1 h3{
+    font-size: 8px;
+}
+
+.project2 img{
+    height: 80px;
+}
+
+.project2 h2{
+    font-size: 15px;
+}
+
+.project2 h3{
+    font-size: 8px;
+}
+
+.project3 img{
+    height: 110px;
+}
+
+.project3 h2{
+    font-size: 15px;
+}
+
+.project3 h3{
+    font-size: 8px;
+}
+
+.connect h2{
+    font-size: 15px;
+}
+
+.connect p{
+    font-size: 12px;
+}
+
+.icons{
+    gap: 15px;
+}
+
+.icons .github{
+    height: 43px;
+}
+
+.icons .twitter{
+    height: 60px;
+}
+
+.icons .linkedin{
+    height: 60px;
+}
+}

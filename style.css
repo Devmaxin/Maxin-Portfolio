@@ -185,197 +185,45 @@ a{
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
 }
 
-.p1{
+.myProjects div{
     background-color: transparent;
     border: #550555 2px solid;
     color: #550555;
     text-align: center;
+    border-radius: 15px;
+    height: 200px;
 }
 
-.p1:hover{
+.myProjects div:hover{
     box-shadow: #231123 -1px -1px 1px 1px;
     color: #a103a1;
 }
 
-.p1 img{
+.myProjects div img{
     height: 100px;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
 }
 
-.p1 h2{
+.myProjects div h2{
     margin-top: 10px;
     font-family: 'Lequire';
     font-size: 15px;
 }
 
-.p1 h3{
+.myProjects div h3{
     margin-top: 10px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
+    font-size: 12px;
 }
 
-.p2{
-    background-color: transparent;
-    border: #550555 2px solid;
-    color: #550555;
-    text-align: center;
-}
-
-.p2:hover{
-    box-shadow: #231123 -1px -1px 1px 1px;
-    color: #a103a1;
-}
-
-.p2 img{
-    height: 100px;
-}
-
-.p2 h2{
-    margin-top: 10px;
-    font-family: 'Lequire';
-    font-size: 15px;
-}
-
-.p2 h3{
-    margin-top: 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-}
-
-.p3{
-    background-color: transparent;
-    border: #550555 2px solid;
-    color: #550555;
-    text-align: center;
-}
-
-.p3:hover{
-    box-shadow: #231123 -1px -1px 1px 1px;
-    color: #a103a1;
-}
-
-.p3 img{
-    height: 100px;
-}
-
-.p3 h2{
-    margin-top: 10px;
-    font-family: 'Lequire';
-    font-size: 13px;
-    
-}
-
-.p3 h3{
-    margin-top: 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-}
-
-/* upcoming projects */
-
-.upcoming_projects {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.upcoming_projects h2{
-    font-family: 'Lequire';
-    text-align: center;
-}
-
-.up_projects{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.project1{
-    background-color: transparent;
-    border: #550555 2px solid;
-    color: #550555;
-    text-align: center;
-}
-
-.project1:hover{
-    box-shadow: #231123 -1px -1px 1px 1px;
-    color: #a103a1;
-}
-
-.project1 img{
-    height: 120px;
-}
-
-.project1 h2{
-    margin-top: 10px;
-    font-family: 'Lequire';
-    font-size: 20px;
-}
-
-.project1 h3{
-    margin-top: 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-}
-
-.project2{
-    background-color: transparent;
-    border: #550555 2px solid;
-    color: #550555;
-    text-align: center;
-}
-
-.project2:hover{
-    box-shadow: #231123 -1px -1px 1px 1px;
-    color: #a103a1;
-}
-
-.project2 img{
-    height: 120px;
-}
-
-.project2 h2{
-    margin-top: 10px;
-    font-family: 'Lequire';
-    font-size: 20px;
-}
-
-.project2 h3{
-    margin-top: 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-}
-
-.project3{
-    background-color: transparent;
-    border: #550555 2px solid;
-    color: #550555;
-    text-align: center;
-}
-
-.project3:hover{
-    box-shadow: #231123 -1px -1px 1px 1px;
-    color: #a103a1;
-}
-
-.project3 img{
-    height: 130px;
-}
-
-.project3 h2{
-    margin-top: 10px;
-    font-family: 'Lequire';
-    font-size: 20px;
-}
-
-.project3 h3{
-    margin-top: 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
+.myProjects div p{
+    margin-top: 5px;
+    font-size: 12px;
+    font-style: italic;
 }
 
 .connect{
@@ -443,6 +291,73 @@ a{
     color: #860286;
 }
 
+/* Floating button container */
+.fab-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Main floating button */
+.fab-main {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.fab-main:hover {
+    transform: rotate(45deg);
+}
+
+/* Child buttons container */
+.fab-options {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+    /* When active, show with animation */
+.fab-options.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.fab-options a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 22px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s;
+}
+
+.fab-options a:hover {
+    transform: scale(1.1);
+}
+
 @media (max-width:900px) {
 .about p{
     font-size: 15px;
@@ -457,76 +372,19 @@ a{
     height: 120px;
 }
 
-.p1 img{
+.myProjects div{
+    height: 170px;
+}
+
+.myProjects div img{
     height: 80px;
 }
 
-.p1 h2{
+.myProjects div h2{
     font-size: 12px;
 }
 
-.p1 h3{
-    font-size: 10px;
-}
-
-.p2 img{
-    height: 80px;
-}
-
-.p2 h2{
-    font-size: 12px;
-}
-
-.p2 h3{
-    font-size: 10px;
-}
-
-.p3 img{
-    height: 80px;
-}
-
-.p3 h2{
-    font-size: 10px;
-    
-}
-
-.p3 h3{
-    font-size: 10px;
-}
-
-.project1 img{
-    height: 100px;
-}
-
-.project1 h2{
-    font-size: 18px;
-}
-
-.project1 h3{
-    font-size: 10px;
-}
-
-.project2 img{
-    height: 100px;
-}
-
-.project2 h2{
-    font-size: 18px;
-}
-
-.project2 h3{
-    font-size: 10px;
-}
-
-.project3 img{
-    height: 100px;
-}
-
-.project3 h2{
-    font-size: 18px;
-}
-
-.project3 h3{
+.myProjects div h3{
     font-size: 10px;
 }
 }
@@ -580,56 +438,23 @@ nav .links a{
 .Skills .f_img{
     height: 90px;
 }
-
-.project1 img{
-    height: 80px;
 }
 
-.project1 h2{
-    font-size: 18px;
+@media (max-width:700px) {
+
+.myProjects div{
+    height: 150px;
 }
 
-.project1 h3{
-    font-size: 8px;
+.myProjects div img{
+    height: 65px;
 }
 
-.project2 img{
-    height: 80px;
+.myProjects div h2{
+    font-size: 12px;
 }
 
-}
-
-@media (max-width:720px) {
-
-.up_projects{
-    gap: 10px;
-}
-
-.project1 img{
-    height: 70px;
-}
-
-.project1 h3{
-    font-size: 7px;
-}
-
-.project2 img{
-    height: 70px;
-}
-
-.project2 h3{
-    font-size: 7px;
-}
-
-.project3 img{
-    height: 80px;
-}
-
-.project3 h2{
-    font-size: 15px;
-}
-
-.project3 h3{
+.myProjects div h3{
     font-size: 7px;
 }
 }
@@ -709,87 +534,22 @@ nav .links a{
     gap: 30px;
 }
 
-.p1 img{
-    height: 120px;
+.myProjects div{
+    height: 170px;
 }
 
-.p1 h2{
+.myProjects div img{
+    height: 80px;
+}
+
+.myProjects div h2{
     font-size: 15px;
 }
 
-.p1 h3{
-    font-size: 13px;
+.myProjects div h3{
+    font-size: 10px;
 }
 
-.p2 img{
-    height: 120px;
-}
-
-.p2 h2{
-    font-size: 15px;
-}
-
-.p2 h3{
-    font-size: 13px;
-}
-
-.p3 img{
-    height: 130px;
-}
-
-.p3 h2{
-    font-size: 15px;
-    
-}
-
-.p3 h3{
-    font-size: 13px;
-}
-
-.up_projects{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.project1 img{
-    height: 120px;
-}
-
-.project1 h2{
-    font-size: 20px;
-}
-
-.project1 h3{
-    font-size: 13px;
-}
-
-.project2 img{
-    height: 120px;
-}
-
-.project2 h2{
-    font-size: 20px;
-}
-
-.project2 h3{
-    font-size: 13px;
-}
-
-.project3 img{
-    height: 160px;
-}
-
-.project3 h2{
-    font-size: 20px;
-}
-
-.project3 h3{
-    font-size: 13px;
-}
 
 }
 
@@ -819,80 +579,23 @@ nav .links{
     height: 80px;
 }
 
-.p1 img{
-    height: 80px;
+.projects h2{
+    font-size: 18px;
 }
 
-.p1 h2{
-    font-size: 12px;
+.myProjects div{
+    height: 160px;
 }
 
-.p1 h3{
-    font-size: 10px;
+.myProjects div img{
+    height: 70px;
 }
 
-.p2 img{
-    height: 80px;
-}
-
-.p2 h2{
-    font-size: 12px;
-}
-
-.p2 h3{
-    font-size: 10px;
-}
-
-.p3 img{
-    height: 80px;
-}
-
-.p3 h2{
-    font-size: 10px;
-    
-}
-
-.p3 h3{
-    font-size: 10px;
-}
-
-.upcoming_projects h2{
-    font-size: 16px;
-}
-
-.project1 img{
-    height: 80px;
-}
-
-.project1 h2{
+.myProjects div h2{
     font-size: 15px;
 }
 
-.project1 h3{
-    font-size: 8px;
-}
-
-.project2 img{
-    height: 80px;
-}
-
-.project2 h2{
-    font-size: 15px;
-}
-
-.project2 h3{
-    font-size: 8px;
-}
-
-.project3 img{
-    height: 110px;
-}
-
-.project3 h2{
-    font-size: 15px;
-}
-
-.project3 h3{
+.myProjects div h3{
     font-size: 8px;
 }
 
